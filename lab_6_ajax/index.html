@@ -20,7 +20,7 @@
       fetch('ajax_sample.json')
         .then(res => res.json())
         .then(res => res.map(c => c.name))
-        .then(res=> document.querySelector(".content").innerText = res);
+        .then(res => document.querySelector(".content").innerText = res);
     }
   </script>
 </body>
