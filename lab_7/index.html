@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,8 +29,10 @@
         }) .then (res =>{
           for(var i =0; i<res.length; i++)
           list.innerHTML+='<li>'+ res[i].title + '</li>'
+       
+       return res;
         })
-        .then(data => document.querySelector(".content").innerText = data.title);
+        .then(data => document.querySelector(".header").innerText = "UMD Bus Route " + data[4].title);
         
     }
   </script>
